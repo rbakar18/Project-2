@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JavaScript/to_do_list.js"></script>
+
+  </head>
+  <body id = "body_style">
+    <ul id = "task_list">
+
+    </ul>
+
+<div class="container-fluid text-center">
+  <form id = "new_task">
+  <h1> Add a Task to Complete: </h1>
+
+  <div class = "row">
+    <div class = "col">
+      <span>Enter here:</span>
+      <input class = "task_name" id = "task_name" autocomplete="off" autofocus placeholder="New Task" type="text">
+
+      <br>
+
+      <label for="priority_selector">Select priority level:</label>
+      <select id = "priority_selector" name="priority_selector">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+      </select>
+
+      <br>
+
+      <label for="status">Task Status:</label>
+      <input class = "status" type = "radio" name = "task_status" value = "Completed"> Completed
+      <input class = "status" type = "radio" name = "task_status" value = "Pending"> Pending
+
+      <input id = "submit" type="submit">
+
+      </div>
+
+    </div>
+        </form>
+    </div>
+
+  </body>
+</html>
