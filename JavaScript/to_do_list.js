@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function(){
         element.parentElement.remove();
 
       }
-      if (element.className ==='completed'){
+      if (element.className ==='completed'|| element.className === 'task-completed'){){
         element.parentElement.style.setProperty("text-decoration", "line-through");
         element.task_status = "completed";
       }
