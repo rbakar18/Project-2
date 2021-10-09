@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
       if (element.className ==='completed'|| element.className === 'task-completed'){
         element.parentElement.style.setProperty("text-decoration", "line-through");
+        element.parentElement.style.color = "white";
         element.task_status = "completed";
       }
 
