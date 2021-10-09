@@ -6,21 +6,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const li = document.createElement('li');
 
-    let task_text = document.querySelector('#task_name').value;
+    let task_title = document.querySelector('#task_name').value;
     let task_priority = document.querySelector('#priority_selector').value;
     let task_status;
     let task_status_input = document.querySelectorAll('[name=task_status]');
 
-
     for (var i = 0; i < task_status_input.length; i++){
       if(task_status_input[i].checked){
         task_status = task_status_input[i].value;
+        
       }
     }
 
     let new_task_html = `
                         <div>
-                        <span> ${task_text} </span> <br>
+                        <span> ${task_title} </span> <br>
                         <span> Priority Level: ${task_priority} </span> <br>
                         <span> Task Status: ${task_status}
                         </div>
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector("#task_name").value = '';
         return false;
   }
+  
     document.addEventListener('click', function(event){
       element = event.target;
       if(element.className === 'remove') {
