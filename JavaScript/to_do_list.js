@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let task_title = document.querySelector('#task_name').value;
     let task_priority = document.querySelector('#priority_selector').value;
     let task_status;
-    let task_status_input = document.querySelectorAll('[name=task_status]');
+    let task_status_input = document.querySelectorAll('[class=status]');
 
     for (var i = 0; i < task_status_input.length; i++){
       if(task_status_input[i].checked){
